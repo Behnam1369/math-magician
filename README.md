@@ -28,7 +28,7 @@ Will be added
 - React.js
 
 ## Live Demo
-Will be added
+Click [here](https://behnam1369.github.io/math-magician/build/) to see the live demo.
 
 ## Authors
 
