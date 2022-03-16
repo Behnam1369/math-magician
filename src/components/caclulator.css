@@ -3,9 +3,8 @@ div.calculator {
   width: 400px;
   height: 400px;
   display: grid;
-  grid-template-columns: repeat(4 , 1fr);
-  grid-template-rows: repeat(6 , 1fr);
-  
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(6, 1fr);
 }
 
 input[type="number"] {
@@ -15,14 +14,13 @@ input[type="number"] {
 }
 
 input[type='number'] {
-    -moz-appearance:textfield;
+  -moz-appearance: textfield;
 }
 
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
-    -webkit-appearance: none;
+  -webkit-appearance: none;
 }
-
 
 button {
   cursor: pointer;

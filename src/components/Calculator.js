@@ -1,7 +1,7 @@
-import React, { PureComponent } from 'react';
+import React from 'react';
 import './caclulator.css';
 
-class Calculator extends PureComponent {
+class Calculator extends React.PureComponent {
   render() {
     return (
       <div className="calculator">
