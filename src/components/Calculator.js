@@ -22,28 +22,31 @@ class Calculator extends React.PureComponent {
 
   render() {
     const { next, total } = this.state;
+    const buttons = [
+      { value: 'AC', class: 'silver' },
+      { value: '+/-', class: 'silver' },
+      { value: '%', class: 'silver' },
+      { value: '÷', class: 'orange' },
+      { value: '7', class: 'silver' },
+      { value: '8', class: 'silver' },
+      { value: '9', class: 'silver' },
+      { value: 'x', class: 'orange' },
+      { value: '4', class: 'silver' },
+      { value: '5', class: 'silver' },
+      { value: '6', class: 'silver' },
+      { value: '-', class: 'orange' },
+      { value: '1', class: 'silver' },
+      { value: '2', class: 'silver' },
+      { value: '3', class: 'silver' },
+      { value: '+', class: 'orange' },
+      { value: '0', class: 'silver btn0' },
+      { value: '.', class: 'silver' },
+      { value: '=', class: 'orange' },
+    ];
     return (
       <div className="calculator">
         <input type="text" value={next || total || ''} onChange={(e) => this.setDisplay(e.target.value)} />
-        <button type="button" className="silver" onClick={(e) => this.handleButtonClick(e.target.innerHTML)}>AC</button>
-        <button type="button" className="silver" onClick={(e) => this.handleButtonClick(e.target.innerHTML)}>+/-</button>
-        <button type="button" className="silver" onClick={(e) => this.handleButtonClick(e.target.innerHTML)}>%</button>
-        <button type="button" className="orange" onClick={(e) => this.handleButtonClick(e.target.innerHTML)}>÷</button>
-        <button type="button" className="silver" onClick={(e) => this.handleButtonClick(e.target.innerHTML)}>7</button>
-        <button type="button" className="silver" onClick={(e) => this.handleButtonClick(e.target.innerHTML)}>8</button>
-        <button type="button" className="silver" onClick={(e) => this.handleButtonClick(e.target.innerHTML)}>9</button>
-        <button type="button" className="orange" onClick={(e) => this.handleButtonClick(e.target.innerHTML)}>x</button>
-        <button type="button" className="silver" onClick={(e) => this.handleButtonClick(e.target.innerHTML)}>4</button>
-        <button type="button" className="silver" onClick={(e) => this.handleButtonClick(e.target.innerHTML)}>5</button>
-        <button type="button" className="silver" onClick={(e) => this.handleButtonClick(e.target.innerHTML)}>6</button>
-        <button type="button" className="orange" onClick={(e) => this.handleButtonClick(e.target.innerHTML)}>-</button>
-        <button type="button" className="silver" onClick={(e) => this.handleButtonClick(e.target.innerHTML)}>1</button>
-        <button type="button" className="silver" onClick={(e) => this.handleButtonClick(e.target.innerHTML)}>2</button>
-        <button type="button" className="silver" onClick={(e) => this.handleButtonClick(e.target.innerHTML)}>3</button>
-        <button type="button" className="orange" onClick={(e) => this.handleButtonClick(e.target.innerHTML)}>+</button>
-        <button type="button" className="silver btn0" onClick={(e) => this.handleButtonClick(e.target.innerHTML)}>0</button>
-        <button type="button" className="silver" onClick={(e) => this.handleButtonClick(e.target.innerHTML)}>.</button>
-        <button type="button" className="orange" onClick={(e) => this.handleButtonClick(e.target.innerHTML)}>=</button>
+        {buttons.map((el) => <button key={1} type="button" className={el.class} onClick={(e) => this.handleButtonClick(e.target.innerHTML)}>{el.value}</button>)}
       </div>
     );
   }
