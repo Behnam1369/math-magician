@@ -7,13 +7,13 @@ div.calculator {
   grid-template-rows: repeat(6, 1fr);
 }
 
-input[type="number"] {
+input[type="text"] {
   grid-column: 1/5;
   font-size: 36px;
   outline: none;
 }
 
-input[type='number'] {
+input[type='text'] {
   -moz-appearance: textfield;
 }
 
