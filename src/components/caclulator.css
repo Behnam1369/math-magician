@@ -7,19 +7,15 @@ div.calculator {
   grid-template-rows: repeat(6, 1fr);
 }
 
-input[type="text"] {
+div.display {
   grid-column: 1/5;
   font-size: 36px;
   outline: none;
-}
-
-input[type='text'] {
-  -moz-appearance: textfield;
-}
-
-input::-webkit-outer-spin-button,
-input::-webkit-inner-spin-button {
-  -webkit-appearance: none;
+  font-family: Arial;
+  display: flex;
+  align-items: center;
+  flex-direction: row-reverse;
+  padding-right: 10px;
 }
 
 button {
