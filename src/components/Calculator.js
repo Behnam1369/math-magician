@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import './caclulator.css';
 import calculate from '../logic/calculate';
 import Button from './Button';
@@ -10,9 +10,30 @@ function Calculator() {
     setState(calculate(state, char));
   };
 
-  const setDisplay = (content) => {
-    state.next = content;
+  // const setDisplay = (content) => {
+  //   state.next = content;
+  // };
+
+  const type = (e) => {
+    if (['1', '2', '3', '4', '5', '6', '7', '8', '9', '0', '.', '+', '-', '=', '%'].includes(e.key)) {
+      handleButtonClick(e.key);
+    } else if (e.key === '*') {
+      handleButtonClick('x');
+    } else if (e.key === 'Enter') {
+      handleButtonClick('=');
+    } else if (e.key === '/') {
+      handleButtonClick('÷');
+    } else {
+      e.preventDefault();
+    }
   };
+
+  useEffect(() => {
+    window.addEventListener('keyup', type);
+    return () => {
+      window.removeEventListener('keyup', type);
+    };
+  }, [state]);
 
   const buttons = [
     { value: 'AC', class: 'silver' },
@@ -37,8 +58,15 @@ function Calculator() {
   ];
   return (
     <div className="calculator">
-      <input type="text" value={state.next || state.total || ''} onChange={(e) => setDisplay(e.target.value)} />
-      {buttons.map((btn) => <Button key="1" buttonValue={btn.value} buttonClass={btn.class} handleButtonClick={handleButtonClick} />)}
+      <div className="display">{state.next || state.total || ''}</div>
+      {buttons.map((btn) => (
+        <Button
+          key={btn.value}
+          buttonValue={btn.value}
+          buttonClass={btn.class}
+          handleButtonClick={handleButtonClick}
+        />
+      ))}
     </div>
   );
 }
