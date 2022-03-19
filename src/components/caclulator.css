@@ -11,7 +11,7 @@ div.display {
   grid-column: 1/5;
   font-size: 36px;
   outline: none;
-  font-family: Arial;
+  font-family: Arial, sans-serif;
   display: flex;
   align-items: center;
   flex-direction: row-reverse;
