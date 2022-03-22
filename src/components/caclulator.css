@@ -7,7 +7,7 @@ div.calculator {
   grid-template-rows: repeat(6, 1fr);
 }
 
-div.display {
+input.display {
   grid-column: 1/5;
   font-size: 36px;
   outline: none;
@@ -16,6 +16,9 @@ div.display {
   align-items: center;
   flex-direction: row-reverse;
   padding-right: 10px;
+  color: #ff00ea;
+  background-color: transparent;
+  text-align: right;
 }
 
 button {

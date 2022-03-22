@@ -10,6 +10,7 @@ class Button extends React.PureComponent {
   handleButtonClick(e) {
     const { handleButtonClick } = this.props;
     handleButtonClick(e.target.innerHTML);
+    e.currentTarget.blur();
   }
 
   render() {
