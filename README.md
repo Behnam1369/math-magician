@@ -16,7 +16,7 @@ Part 4: [Refactor with hooks](https://github.com/microverseinc/curriculum-react-
 
 
 # screenshot 
-Will be added
+![Screenshot](Demo.jpg)
 
 ## Built using
 
