@@ -1,0 +1,71 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: rgb(29, 1, 29);
+  color: rgb(255, 0, 234);
+  margin: 0;
+}
+
+header {
+  display: flex;
+  justify-content: space-around;
+  background-color: #190019;
+  margin-bottom: 20px;
+  border-bottom: solid 1px rgba(192, 192, 192, 0.301);
+}
+
+header h1 {
+  color: yellow;
+  display: inline;
+}
+
+header nav {
+  display: inline;
+}
+
+header ul {
+  display: inline-flex;
+}
+
+header li {
+  list-style: none;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding: 10px;
+}
+
+header li a {
+  color: yellow;
+  transition: all 0.2s;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+header li a:hover {
+  color: white;
+  border-bottom: dotted 1px white;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+main h2,
+main p {
+  width: 90%;
+  max-width: 1000px;
+}
+
+.calcContainer {
+  display: flex;
+  justify-content: space-around;
+}
+
+.calcContainer > div {
+  text-align: center;
+}
+
+.display {
+  border: solid 1px white;
+}
