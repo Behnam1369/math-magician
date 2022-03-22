@@ -14,8 +14,8 @@ class App extends React.PureComponent {
           <Header />
           <Routes>
             <Route path="/" exact element={<Home />} />
-            <Route path="Calculator" element={<Calculator />} />
-            <Route path="Quote" element={<Quote />} />
+            <Route path="/Calculator" element={<Calculator />} />
+            <Route path="/Quote" element={<Quote />} />
           </Routes>
         </Router>
       </div>
