@@ -1,7 +1,7 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
 # Math Magician
-A simple calculator app to learn react basics.
+A simple calculator app to learn react basics. I nthis project I have used react components (class based and function based), react hooks, routing and styling.  
 
 
 # Requirements for this project
