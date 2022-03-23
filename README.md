@@ -28,7 +28,7 @@ Part 4: [Refactor with hooks](https://github.com/microverseinc/curriculum-react-
 - React.js
 
 ## Live Demo
-Click [here](https://behnam1369.github.io/math-magician/build/) to see the live demo.
+Click [here](https://behnam1369.github.io/math-magician/) to see the live demo.
 
 ## Authors
 
