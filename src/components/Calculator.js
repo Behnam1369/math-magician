@@ -67,7 +67,7 @@ function Calculator() {
         </h2>
       </div>
       <div className="calculator">
-        <input type="text" disabled className="display" value={state.next || state.total || ''} />
+        <input type="text" disabled data-testid="display" className="display" value={state.next || state.total || ''} />
         {buttons.map((btn) => (
           <Button
             key={btn.value}
