@@ -4,9 +4,15 @@ import {
   render, fireEvent, screen, waitFor,
 } from '@testing-library/react';
 import '@testing-library/jest-dom';
+import TestRenderer from 'react-test-renderer';
 import App from '../App';
 import operate from '../logic/operate';
 import calculate from '../logic/calculate';
+import Home from '../components/Home';
+import Button from '../components/Button';
+import Header from '../components/Header';
+import Quote from '../components/Quote';
+import Calculator from '../components/Calculator';
 
 // Set up React Testing Library.
 // Follow the instructions in the official documentation.
@@ -49,8 +55,8 @@ describe('operate(numberOne, numberTwo, operation)', () => {
 
 describe('calculate(obj, buttonName)', () => {
   it('should react to numbers', () => {
-    expect(calculate({ total: null, next: null, operation: null }, '4')).toEqual({ total: null, next: '4', operation: null });
-    expect(calculate({ total: null, next: '3', operation: null }, '5')).toEqual({ total: null, next: '35', operation: null });
+    expect(calculate({ total: null, next: null, operation: null }, '4')).toEqual({ next: '4', total: null });
+    expect(calculate({ total: null, next: '3', operation: null }, '5')).toEqual({ total: null, next: '35' });
     expect(calculate({ total: '4', next: null, operation: '+' }, '4')).toEqual({ total: '4', next: '4', operation: '+' });
   });
   it('should react to operatios', () => {
@@ -61,22 +67,34 @@ describe('calculate(obj, buttonName)', () => {
     expect(calculate({ total: null, next: '34', operation: null }, '÷')).toEqual({ total: '34', next: null, operation: '÷' });
     expect(calculate({ total: '9', next: '3', operation: '+' }, '-')).toEqual({ total: '12', next: null, operation: '-' });
   });
-  it('should multiply numbers', () => {
-    expect(calculate({ total: null, next: null, operation: null }, '4')).toEqual({ total: null, next: '4', operation: null });
-    expect(calculate({ total: null, next: '3', operation: null }, '5')).toEqual({ total: null, next: '35', operation: null });
-    expect(calculate({ total: '4', next: null, operation: '+' }, '4')).toEqual({ total: '4', next: '4', operation: '+' });
+});
+
+describe('testing react components using jest snapshot', () => {
+  it('Testing Home component snapshot', () => {
+    const testRenderer = TestRenderer.create(<Home />).toJSON();
+    expect(testRenderer).toMatchSnapshot();
   });
-  it('should divide numbers', () => {
-    expect(operate('2', '4', '÷')).toBe('0.5');
-    expect(operate('4', '4', '÷')).toBe('1');
-    expect(operate('5', '4', '÷')).toBe('1.25');
-    expect(operate('5', '0', '÷')).toBe('Can\'t divide by 0.');
+
+  it('Testing Button component snapshot', () => {
+    const testRenderer = TestRenderer.create(<Button
+      key="+"
+      buttonValue="+"
+      buttonClass="silver"
+      handleButtonClick={() => { console.log('1'); }}
+    />).toJSON();
+    expect(testRenderer).toMatchSnapshot();
   });
-  it('should calculate division module', () => {
-    expect(operate('2', '4', '%')).toBe('2');
-    expect(operate('4', '4', '%')).toBe('0');
-    expect(operate('5', '4', '%')).toBe('1');
-    expect(operate('5', '0', '%')).toBe('Can\'t find modulo as can\'t divide by 0.');
+  it('Testing Header component snapshot', () => {
+    const testRenderer = TestRenderer.create(<Header />).toJSON();
+    expect(testRenderer).toMatchSnapshot();
+  });
+  it('Testing Quote component snapshot', () => {
+    const testRenderer = TestRenderer.create(<Quote />).toJSON();
+    expect(testRenderer).toMatchSnapshot();
+  });
+  it('Testing Calculator component snapshot', () => {
+    const testRenderer = TestRenderer.create(<Calculator />).toJSON();
+    expect(testRenderer).toMatchSnapshot();
   });
 });
 
