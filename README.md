@@ -1,7 +1,7 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
 # Math Magician
-A simple calculator app to learn react basics.
+A simple calculator app to learn react basics. I nthis project I have used react components (class based and function based), react hooks, routing and styling.  
 
 
 # Requirements for this project
@@ -16,7 +16,7 @@ Part 4: [Refactor with hooks](https://github.com/microverseinc/curriculum-react-
 
 
 # screenshot 
-Will be added
+![Screenshot](Demo.jpg)
 
 ## Built using
 
@@ -28,7 +28,7 @@ Will be added
 - React.js
 
 ## Live Demo
-Click [here](https://behnam1369.github.io/math-magician/build/) to see the live demo.
+Click [here](https://behnam1369.github.io/math-magician/) to see the live demo.
 
 ## Authors
 

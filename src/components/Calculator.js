@@ -15,6 +15,7 @@ function Calculator() {
   // };
 
   const type = (e) => {
+    e.preventDefault();
     if (['1', '2', '3', '4', '5', '6', '7', '8', '9', '0', '.', '+', '-', '=', '%'].includes(e.key)) {
       handleButtonClick(e.key);
     } else if (e.key === '*') {
@@ -23,8 +24,6 @@ function Calculator() {
       handleButtonClick('=');
     } else if (e.key === '/') {
       handleButtonClick('÷');
-    } else {
-      e.preventDefault();
     }
   };
 
@@ -57,16 +56,27 @@ function Calculator() {
     { value: '=', class: 'orange' },
   ];
   return (
-    <div className="calculator">
-      <div className="display">{state.next || state.total || ''}</div>
-      {buttons.map((btn) => (
-        <Button
-          key={btn.value}
-          buttonValue={btn.value}
-          buttonClass={btn.class}
-          handleButtonClick={handleButtonClick}
-        />
-      ))}
+    <div className="calcContainer">
+      <div>
+        <h2>
+          Let&apos;s do some math
+          {' '}
+          <br />
+          {' '}
+          Feel free using your keyboard
+        </h2>
+      </div>
+      <div className="calculator">
+        <input type="text" disabled className="display" value={state.next || state.total || ''} />
+        {buttons.map((btn) => (
+          <Button
+            key={btn.value}
+            buttonValue={btn.value}
+            buttonClass={btn.class}
+            handleButtonClick={handleButtonClick}
+          />
+        ))}
+      </div>
     </div>
   );
 }
