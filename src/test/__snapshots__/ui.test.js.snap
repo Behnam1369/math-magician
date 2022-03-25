@@ -1,0 +1,278 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`testing react components using jest snapshot Testing App component snapshot 1`] = `
+<div>
+  <header>
+    <h1>
+      Math Magician
+    </h1>
+    <nav>
+      <ul>
+        <li>
+          <a
+            href="#/"
+          >
+            Home
+          </a>
+        </li>
+        <li>
+          <a
+            href="#/Calculator"
+          >
+            Calculator
+          </a>
+        </li>
+        <li>
+          <a
+            href="#/Quote"
+          >
+            Quote
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <h2>
+      Welcome to our page!
+    </h2>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    </p>
+  </main>
+</div>
+`;
+
+exports[`testing react components using jest snapshot Testing Button component snapshot 1`] = `
+<button
+  className="silver"
+  onClick={[Function]}
+  type="button"
+>
+  +
+</button>
+`;
+
+exports[`testing react components using jest snapshot Testing Calculator component snapshot 1`] = `
+<div
+  className="calcContainer"
+>
+  <div>
+    <h2>
+      Let's do some math
+       
+      <br />
+       
+      Feel free using your keyboard
+    </h2>
+  </div>
+  <div
+    className="calculator"
+  >
+    <input
+      className="display"
+      data-testid="display"
+      disabled={true}
+      type="text"
+      value=""
+    />
+    <button
+      className="silver"
+      onClick={[Function]}
+      type="button"
+    >
+      AC
+    </button>
+    <button
+      className="silver"
+      onClick={[Function]}
+      type="button"
+    >
+      +/-
+    </button>
+    <button
+      className="silver"
+      onClick={[Function]}
+      type="button"
+    >
+      %
+    </button>
+    <button
+      className="orange"
+      onClick={[Function]}
+      type="button"
+    >
+      ÷
+    </button>
+    <button
+      className="silver"
+      onClick={[Function]}
+      type="button"
+    >
+      7
+    </button>
+    <button
+      className="silver"
+      onClick={[Function]}
+      type="button"
+    >
+      8
+    </button>
+    <button
+      className="silver"
+      onClick={[Function]}
+      type="button"
+    >
+      9
+    </button>
+    <button
+      className="orange"
+      onClick={[Function]}
+      type="button"
+    >
+      x
+    </button>
+    <button
+      className="silver"
+      onClick={[Function]}
+      type="button"
+    >
+      4
+    </button>
+    <button
+      className="silver"
+      onClick={[Function]}
+      type="button"
+    >
+      5
+    </button>
+    <button
+      className="silver"
+      onClick={[Function]}
+      type="button"
+    >
+      6
+    </button>
+    <button
+      className="orange"
+      onClick={[Function]}
+      type="button"
+    >
+      -
+    </button>
+    <button
+      className="silver"
+      onClick={[Function]}
+      type="button"
+    >
+      1
+    </button>
+    <button
+      className="silver"
+      onClick={[Function]}
+      type="button"
+    >
+      2
+    </button>
+    <button
+      className="silver"
+      onClick={[Function]}
+      type="button"
+    >
+      3
+    </button>
+    <button
+      className="orange"
+      onClick={[Function]}
+      type="button"
+    >
+      +
+    </button>
+    <button
+      className="silver btn0"
+      onClick={[Function]}
+      type="button"
+    >
+      0
+    </button>
+    <button
+      className="silver"
+      onClick={[Function]}
+      type="button"
+    >
+      .
+    </button>
+    <button
+      className="orange"
+      onClick={[Function]}
+      type="button"
+    >
+      =
+    </button>
+  </div>
+</div>
+`;
+
+exports[`testing react components using jest snapshot Testing Header component snapshot 1`] = `
+<header>
+  <h1>
+    Math Magician
+  </h1>
+  <nav>
+    <ul>
+      <li>
+        <a
+          href="#/"
+        >
+          Home
+        </a>
+      </li>
+      <li>
+        <a
+          href="#/Calculator"
+        >
+          Calculator
+        </a>
+      </li>
+      <li>
+        <a
+          href="#/Quote"
+        >
+          Quote
+        </a>
+      </li>
+    </ul>
+  </nav>
+</header>
+`;
+
+exports[`testing react components using jest snapshot Testing Home component snapshot 1`] = `
+<main>
+  <h2>
+    Welcome to our page!
+  </h2>
+  <p>
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+  </p>
+  <p>
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+  </p>
+</main>
+`;
+
+exports[`testing react components using jest snapshot Testing Quote component snapshot 1`] = `
+<h2
+  style={
+    Object {
+      "margin": "auto",
+      "maxWidth": "1000px",
+      "textAlign": "center",
+    }
+  }
+>
+  Mathematics is not about numbers, equations, computations, or algorithms. It is about understanding. - William Paul Thurston
+</h2>
+`;
