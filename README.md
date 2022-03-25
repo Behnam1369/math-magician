@@ -28,7 +28,7 @@ Part 4: [Refactor with hooks](https://github.com/microverseinc/curriculum-react-
 - React.js
 
 ## Live Demo
-Click [here](https://behnam1369.github.io/math-magician/) to see the live demo.
+You can find the live demo on [Github](https://behnam1369.github.io/math-magician/) , [Heroku](https://math-magician-app.herokuapp.com/) or [Netlify](https://luxury-vacherin-461938.netlify.app/Calculator).
 
 ## Authors
 
